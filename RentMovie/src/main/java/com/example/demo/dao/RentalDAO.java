@@ -11,11 +11,11 @@ import com.example.demo.entity.User;
 @Repository
 public interface RentalDAO extends JpaRepository<Rental, Integer> {
 	
-	public List<Rental> findAll();
-	public Optional<Rental> findById(Integer id);
-	public Rental createRental(Rental rental);
-	public void deleteById(Integer id); 
-	public void deleteAll();
+//	public List<Rental> findAll();
+//	public Optional<Rental> findById(Integer id);
+//	public Rental createRental(Rental rental);
+//	public void deleteById(Integer id); 
+//	public void deleteAll();
 
 
 }

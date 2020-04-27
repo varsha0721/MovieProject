@@ -38,8 +38,8 @@ public class RentalController {
 	}
 	
 	@PutMapping("/rental")
-	public Rental createUser(@RequestBody Rental rental) {
-		return rentaldaoservice.save(rental);
+	public Rental createRental(@RequestBody Rental rental) {
+		return rentaldaoservice.createRental(rental);
 	}
 	
 	@DeleteMapping("/rental/{id}")

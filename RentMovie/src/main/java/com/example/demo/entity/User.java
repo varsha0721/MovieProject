@@ -23,6 +23,6 @@ public class User {
 	@Column(name = "age")
 	private int age;
 	
-	@OneToMany(targetEntity = Movie.class)
-	private List movielist;
+//	@OneToMany(targetEntity = Movie.class)
+//	private List movielist;
 }

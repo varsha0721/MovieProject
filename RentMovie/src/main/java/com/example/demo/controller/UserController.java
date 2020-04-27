@@ -32,17 +32,17 @@ public class UserController {
 	}
 	
 	@GetMapping("/user/{id}")
-	public List<User> getUserById(@PathVariable String id){
+	public List<User> getUserById(@PathVariable int id){
 		return userdaoservice.findAll();
 	}
 	
 	@PutMapping("/user")
 	public User createUser(@RequestBody User user) {
-		return userdaoservice.save(user);
+		return userdaoservice.createUser(user);
 	}
 	
 	@DeleteMapping("/user/{id}")
-	public void deleteById(@PathVariable String id) {
+	public void deleteById(@PathVariable int id) {
 		 userdaoservice.deleteById(id);
 	}
 

@@ -8,14 +8,15 @@ import org.springframework.data.domain.Example;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.dao.UserDAO;
 import com.example.demo.entity.User;
 
-@Service
-public class UserDaoService implements UserDAO {
+@Component
+public class UserDaoService  {
 	
 	public UserDAO userDAO;
 	
@@ -26,34 +27,34 @@ public class UserDaoService implements UserDAO {
 		userDao = this.userDAO;
 	}
 
-	@Override
+	
 	@Transactional
 	public List<User> findAll() {
 		
 		return userDAO.findAll();
 	}
 
-	@Override
+	
 	@Transactional
-	public Optional<User> findById(String id) {
+	public Optional<User> findById(int id) {
 		Optional<User> user = userDAO.findById(id);
 		return user;
 	}
 
-	@Override
+	
 	@Transactional
 	public User createUser(User user) {
 		return userDAO.save(user);
 	}
 
-	@Override
+	
 	@Transactional
-	public void deleteById(String id) {
+	public void deleteById(int id) {
 		userDAO.deleteById(id);
 		
 	}
 
-	@Override
+	
 	@Transactional
 	public void deleteAll() {
 		userDAO.deleteAll();

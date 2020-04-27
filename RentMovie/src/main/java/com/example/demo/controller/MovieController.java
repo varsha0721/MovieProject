@@ -39,7 +39,7 @@ public class MovieController {
 	
 	@PutMapping("/movie")
 	public Movie createMovie(@RequestBody Movie movie) {
-		return moviedaoservice.save(movie);
+		return moviedaoservice.createMovie(movie);
 	}
 	
 	@DeleteMapping("/movie/{id}")

@@ -22,7 +22,7 @@ public class Rental {
 	@Column(name = "amount")
 	private int amount;
 	
-	@OneToMany(targetEntity = Movie.class)
-	private List movielist;
+//	@OneToMany(targetEntity = Movie.class)
+//	private List movielist;
 
 }

@@ -10,10 +10,10 @@ import com.example.demo.entity.User;
 @Repository
 public interface UserDAO extends JpaRepository<User, Integer>{
 
-	public List<User> findAll();
-	public Optional<User> findById(String id);
-	public User createUser(User user);
-	public void deleteById(String id); 
-	public void deleteAll();
-	
+//	public List<User> findAll();
+//	public Optional<User> findById(String id);
+//	public User createUser(User user);
+//	public void deleteById(String id); 
+//	public void deleteAll();
+//	
 }
