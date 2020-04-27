@@ -1,0 +1,167 @@
+package com.example.demo.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+
+import com.example.demo.dao.RentalDAO;
+import com.example.demo.entity.Rental;
+import com.example.demo.entity.User;
+
+public class RentalDaoService implements RentalDAO {
+
+	@Override
+	public List<Rental> findAll(Sort sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Rental> findAllById(Iterable<Integer> ids) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Rental> List<S> saveAll(Iterable<S> entities) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void flush() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public <S extends Rental> S saveAndFlush(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteInBatch(Iterable<Rental> entities) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAllInBatch() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Rental getOne(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Rental> List<S> findAll(Example<S> example) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Rental> List<S> findAll(Example<S> example, Sort sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<Rental> findAll(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Rental> S save(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean existsById(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void delete(Rental entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAll(Iterable<? extends Rental> entities) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public <S extends Rental> Optional<S> findOne(Example<S> example) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Rental> Page<S> findAll(Example<S> example, Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Rental> long count(Example<S> example) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public <S extends Rental> boolean exists(Example<S> example) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Rental> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<Rental> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User createRental(Rental rental) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAll() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

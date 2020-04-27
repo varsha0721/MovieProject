@@ -1,0 +1,166 @@
+package com.example.demo.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+
+import com.example.demo.dao.MovieDAO;
+import com.example.demo.entity.Movie;
+
+public class MovieDaoService implements MovieDAO {
+
+	@Override
+	public List<Movie> findAll(Sort sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Movie> findAllById(Iterable<Integer> ids) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Movie> List<S> saveAll(Iterable<S> entities) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void flush() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public <S extends Movie> S saveAndFlush(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteInBatch(Iterable<Movie> entities) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAllInBatch() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Movie getOne(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Movie> List<S> findAll(Example<S> example) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Movie> List<S> findAll(Example<S> example, Sort sort) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<Movie> findAll(Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Movie> S save(S entity) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean existsById(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public long count() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void delete(Movie entity) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAll(Iterable<? extends Movie> entities) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public <S extends Movie> Optional<S> findOne(Example<S> example) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Movie> Page<S> findAll(Example<S> example, Pageable pageable) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public <S extends Movie> long count(Example<S> example) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public <S extends Movie> boolean exists(Example<S> example) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Movie> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Optional<Movie> findById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Movie createMovie(Movie movie) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteById(Integer id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void deleteAll() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
