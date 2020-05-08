@@ -3,6 +3,7 @@ package com.example.demo.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.entity.User;
+import com.example.demo.enums.ErrorResponse;
+import com.example.demo.exception.NotFoundException;
 import com.example.demo.service.UserDaoService;
 
 @RestController
@@ -19,6 +22,11 @@ import com.example.demo.service.UserDaoService;
 public class UserController {
 	
 	private UserDaoService userdaoservice;
+	
+	@GetMapping("/getUserEx")
+	public ResponseEntity<Object> getUser(){
+		throw new NotFoundException(ErrorResponse.USER_NOT_FOUND);
+	}
 	
 	@Autowired
 	public UserController(UserDaoService userdaoservice) {
